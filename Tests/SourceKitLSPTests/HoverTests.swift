@@ -33,8 +33,7 @@ final class HoverTests: XCTestCase {
 
         Details.
         """,
-      expectedRange:
-        .init(line: 3, utf16index: 7) ..< .init(line: 3, utf16index: 9)
+      expectedRange: .init(line: 4, utf16index: 8) ..< .init(line: 4, utf16index: 9)
     )
   }
 
@@ -84,8 +83,7 @@ final class HoverTests: XCTestCase {
         ```
 
         """,
-      expectedRange:
-        .init(line: 3, utf16index: 4) ..< .init(line: 3, utf16index: 7)
+      expectedRange: .init(line: 1, utf16index: 8) ..< .init(line: 1, utf16index: 11)
     )
   }
 
@@ -118,8 +116,7 @@ final class HoverTests: XCTestCase {
 
         The initializer
         """,
-      expectedRange:
-        .init(line: 5, utf16index: 4) ..< .init(line: 5, utf16index: 7)
+      expectedRange: .init(line: 2, utf16index: 8) ..< .init(line: 2, utf16index: 11)
     )
   }
 
@@ -137,8 +134,7 @@ final class HoverTests: XCTestCase {
 
         this is **bold** documentation
         """##,
-      expectedRange:
-        .init(line: 1, utf16index: 5) ..< .init(line: 1, utf16index: 9)
+      expectedRange: .init(line: 2, utf16index: 6) ..< .init(line: 2, utf16index: 30)
     )
   }
 
@@ -157,7 +153,7 @@ final class HoverTests: XCTestCase {
         this is *italic* documentation
         """##,
       expectedRange:
-        .init(line: 1, utf16index: 5) ..< .init(line: 1, utf16index: 8)
+        .init(line: 2, utf16index: 6) ..< .init(line: 2, utf16index: 35)
     )
   }
 
@@ -179,8 +175,7 @@ final class HoverTests: XCTestCase {
 
         - Precondition: Must have an apple
         """,
-      expectedRange:
-        .init(line: 3, utf16index: 5) ..< .init(line: 3, utf16index: 13)
+      expectedRange: .init(line: 4, utf16index: 6) ..< .init(line: 4, utf16index: 16)
     )
   }
 }
