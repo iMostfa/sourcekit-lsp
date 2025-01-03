@@ -109,8 +109,8 @@ struct CursorInfo {
         receiverUsrs: dict[keys.receivers]?.compactMap { $0[keys.usr] as String? } ?? [],
         systemModule: module,
         line: line,
-        column: column,
-        length: length
+        length: length,
+        column: column
       ),
       annotatedDeclaration: dict[keys.annotatedDecl],
       documentationXML: dict[keys.docFullAsXML],
